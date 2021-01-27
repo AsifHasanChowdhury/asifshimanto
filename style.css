@@ -32,6 +32,20 @@ body{
   
   padding-bottom: 0.001rem;
  }
+
+.footer{
+
+   box-sizing: border-box;
+   background-color:cadetblue;
+   width: 100%;
+   color:#f0fff0;
+   text-align: center;
+   display: block;
+   margin-left: 0px;
+   margin-right:0px ;
+   background-repeat:no-repeat;
+
+}
  
  .Education-container{
 
