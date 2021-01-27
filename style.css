@@ -8,7 +8,7 @@
 body{
     
     background-size: 1366px 768px;
-    background: url("/img2/Random.jpg");
+    background: url("Random.jpg");
     background-repeat:no-repeat; /*image repeatation off kore*/
     /* background-attachment fixed dile shb khane pics jai */
  
