@@ -1,85 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
 body{
     
-    background-size: 1920px 1080px;
-   background: url("Random.jpg");
+    background-size: 1366px 768px;
+    background: url("/img2/Random.jpg");
     background-repeat:no-repeat; /*image repeatation off kore*/
     /* background-attachment fixed dile shb khane pics jai */
  
     background-attachment: fixed;  
     font-family: 'Open Sans', sans-serif;
-    font:bolder;
-
-   
+    font:bolder; 
    /*  background-attachment: scroll;  image scroll kora jai */
 
 }
-
 .mynav{
-   
+    padding-bottom: 0.2rem;
     position: fixed;
     width: 100%;
     top:0;
     left:0;
     z-index:1;
 }
-.container{
-
-    margin-top: 8rem;
-
+.about-container{
+    padding-top: 9.5rem;
+    padding-bottom: 0.001rem;
 }
-
- .about-container{
+   
+.Education-container{
   
-  padding-bottom: 0.001rem;
- }
-
-.footer{
-
-   box-sizing: border-box;
-   background-color:cadetblue;
-   width: 100%;
-   color:#f0fff0;
-   text-align: center;
-   display: block;
-   margin-left: 0px;
-   margin-right:0px ;
-   background-repeat:no-repeat;
-
+   margin-left:30px;
+      
 }
- 
- .Education-container{
-
- margin-left:30px;
-    
- }
-
-.redtype-color{
-
-    margin-top:4rem;
-   font-weight: bolder; /*font bold kore */
-    color:blue;
+  
+  .redtype-color{
+  
+      margin-top:4rem;
+     font-weight: bolder; /*font bold kore */
+      color:blue;
 }
-.circle{
+  .circle{
+  
+      background-color:darkorange;
+      width:150px;
+      height:150px;
+      border-radius:50%;
+      border-color: blue;
+      
+  
+  }
+  .project-container{
+        color: blue;
+        padding-left: 10px;
+        padding-top: 32px;
+        padding-bottom: 40px;
+      /*can add background color */
 
-    background-color:darkorange;
-    width:150px;
-    height:150px;
-    border-radius:50%;
-    border-color: blue;
-    
-
-}
-.project-container{
-      padding-top: 40px;
-    /*can add background color */
-
-}
-
-.img-size{
+  }
+  .img-size{
     padding-top: 0px;
     padding-bottom:10px;
     max-width:100%;
     height:49.5%;
-    
 }
+
+.php{
+    height: 262px;
+    width:400px;
+}
+
+
+.footer{
+    
+    box-sizing: border-box;
+    background-color:black;
+    width: 100%;
+    color:#f0fff0;
+    text-align: center;
+    display: block;
+    background-repeat:no-repeat;
+  
+  }
+  
+  .circles{
+
+    background-color: cyan;
+    width:60px;
+    height:60px;
+    border-radius: 50%;
+    display:inline-block;
+    font-size: 40px;
+    text-align: center;
+    color:black;
+  }
+
+  .circles:hover{
+
+    
+    background-color:cornsilk;
+  }
 
