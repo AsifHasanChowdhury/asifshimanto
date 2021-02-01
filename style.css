@@ -1,113 +1,253 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
 
 .hidden-thing {
-  
-    position: absolute;
-    left: 100%;
-    width: 50px;
-    height: 50px;
-    opacity: 0;
+  position: absolute;
+  left: 100%;
+  width: 50px;
+  height: 50px;
+  opacity: 0;
+}
+
+body {
+  overflow-x: hidden;
+  background: rgb(34, 193, 195);
+  background: linear-gradient(65deg, rgba(34, 193, 195, 1) 0%, rgba(252, 240, 212, 1) 88%);
+  font-family: 'Exo', sans-serif;
+  font: bolder;
+  /*  background-attachment: scroll;  image scroll kora jai */
+}
+
+.mynav {
+  background-color: #0093E9;
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+  padding-bottom: 0.2rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.about-container {
+  padding-top: 6.5rem;
+  padding-bottom: 0.001rem;
+}
+
+.Education-container {
+  margin-left: 30px;
+}
+
+.redtype-color {
+  margin-top: 4rem;
+  font-weight: bolder;
+  /*font bold kore */
+  color: blue;
+}
+
+.circle {
+  background: rgb(34, 193, 195);
+  background: linear-gradient(65deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border-color: blue;
+}
+
+.project-container {
+  color: blue;
+  padding-left: 10px;
+  padding-top: 32px;
+  padding-bottom: 40px;
+  /*can add background color */
+}
+
+.footer {
+  box-sizing: border-box;
+  background-color: #0093E9;
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+  width: 100%;
+  color: #f0fff0;
+  text-align: center;
+  margin-right: 0%;
+}
+
+.circles {
+  background-color: cyan;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 40px;
+  text-align: center;
+  color: black;
+}
+
+.circles:hover {
+  background-color: white;
+}
+
+.cardBox {
+  float: left;
+  font-size: 1.2em;
+  margin: 1% 0 0 1%;
+  perspective: 800px;
+  transition: all 0.3s ease 0s;
+  width: 23.7%;
+  border-radius: 10rem;
+}
+
+.cardBox:hover .card {
+  transform: rotateY( 180deg);
+}
+
+.card {
+  cursor: default;
+  height: 300px;
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease 0s;
+  width: 100%;
+  -webkit-animation: giro 1s 1;
+  animation: giro 1s 1;
+  border-radius: 1rem;
+}
+
+.card p {
+  margin-bottom: 1.8em;
+}
+
+.card .front, .card .back {
+  backface-visibility: hidden;
+  box-sizing: border-box;
+  color: white;
+  display: block;
+  font-size: 1.2em;
+  height: 100%;
+  padding: 0.8em;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.card .front strong {
+  background: #fff;
+  border-radius: 100%;
+  color: #222;
+  font-size: 1.5em;
+  line-height: 30px;
+  padding: 0 7px 4px 6px;
+}
+
+.card .back {
+  transform: rotateY( 180deg);
+}
+
+.card .back a {
+  padding: 0.3em 0.5em;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 1px;
+  font-size: 0.9em;
+  transition: all 0.2s ease 0s;
+}
+
+.card .back a:hover {
+  background: #fff;
+  color: #333;
+  text-shadow: 0 0 1px #333;
+}
+
+.cardBox:nth-child(1) .card .back {
+  background: cornflowerblue;
+}
+
+.cardBox:nth-child(2) .card .back {
+  background: orange;
+}
+
+.cardBox:nth-child(3) .card .back {
+  background: yellowgreen;
+}
+
+.cardBox:nth-child(4) .card .back {
+  background: tomato;
+}
+
+.cardBox:nth-child(2) .card {
+  -webkit-animation: giro 1.5s 1;
+  animation: giro 1.5s 1;
+}
+
+.cardBox:nth-child(3) .card {
+  -webkit-animation: giro 2s 1;
+  animation: giro 2s 1;
+}
+
+.cardBox:nth-child(4) .card {
+  -webkit-animation: giro 2.5s 1;
+  animation: giro 2.5s 1;
+}
+
+@-webkit-keyframes giro {
+  from {
+    transform: rotateY( 180deg);
   }
-body{
-    overflow-x:hidden;
-    background-size: 1366px 768px;
-    background: url("Random.jpg");
-    background-repeat:no-repeat; /*image repeatation off kore*/
-    /* background-attachment fixed dile shb khane pics jai */
- 
-    background-attachment: fixed;  
-    font-family: 'Open Sans', sans-serif;
-    font:bolder; 
-   /*  background-attachment: scroll;  image scroll kora jai */
-
-}
-.mynav{
-    padding-bottom: 0.2rem;
-    position: fixed;
-    width: 100%;
-    top:0;
-    left:0;
-    z-index:1;
-}
-.about-container{
-    padding-top: 6.5rem;
-    padding-bottom: 0.001rem;
-}
-   
-   
-.Education-container{
-  
-   margin-left:30px;
-      
-}
-  
-  .redtype-color{
-  
-      margin-top:4rem;
-     font-weight: bolder; /*font bold kore */
-      color:blue;
-}
-  .circle{
-  
-      background-color:darkorange;
-      width:150px;
-      height:150px;
-      border-radius:50%;
-      border-color: blue;
-      
-  
+  to {
+    transform: rotateY( 0deg);
   }
-  .project-container{
-        color: blue;
-        padding-left: 10px;
-        padding-top: 32px;
-        padding-bottom: 40px;
-      /*can add background color */
-
-  }
-  .img-size{
-    padding-top: 0px;
-    padding-bottom:10px;
-    max-width:100%;
-    height:49.5%;
 }
 
-.php{
-    height: 262px;
-    width:400px;
+@keyframes giro {
+  from {
+    transform: rotateY( 180deg);
+  }
+  to {
+    transform: rotateY( 0deg);
+  }
 }
 
-
-.footer{
-    
-    box-sizing: border-box;
-    background-color:black;
-    width: 100%;
-    color:#f0fff0;
-    text-align: center;
-    display: block;
-    background-repeat:no-repeat;
-  
+@media screen and (max-width: 767px) {
+  .cardBox {
+    margin-left: 2.8%;
+    margin-top: 3%;
+    width: 46%;
   }
-  
-  .circles{
-
-    background-color: cyan;
-    width:60px;
-    height:60px;
-    border-radius: 50%;
-    display:inline-block;
-    font-size: 40px;
-    text-align: center;
-    color:black;
+  .card {
+    height: 285px;
   }
-
-  .circles:hover{
-    
-    background-color:cornsilk;
+  .cardBox:last-child {
+    margin-bottom: 3%;
   }
+}
 
+@media screen and (max-width: 480px) {
+  .cardBox {
+    width: 94.5%;
+  }
+  .card {
+    height: 260px;
+  }
+}
+
+.color {
+  background: rgb(34, 193, 195);
+  background: linear-gradient(65deg, rgba(34, 193, 195, 1) 0%, rgba(252, 240, 212, 1) 88%);
+  border-radius: 0.5rem;
+}
+
+.skill {
+  background: rgb(7, 233, 184);
+  text-align: right;
+  padding-right: 20px;
+  line-height: 30px;
+  border-radius: 0 20px 20px 0;
+}
+
+.backs {
+  background: none !important;
+}
