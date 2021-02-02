@@ -245,13 +245,14 @@ body {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 530px) {
   .cardBox {
-    width: 94.5%;
+    margin-left: 55px;
+    width: 64.5%;
     font-size: 2px;
   }
   .card {
-    height: 260px;
+    height: 250px;
   }
 }
 
