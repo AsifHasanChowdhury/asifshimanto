@@ -211,28 +211,11 @@ body {
     transform: rotateY( 0deg);
   }
 }
-
-@media screen and (min-width: 1025px) {
+@media screen and (max-width: 1195px) {
   .cardBox {
-    margin-left: 6.8%;
+    margin-left: 12.8%;
     margin-top: 3%;
-    width: 40%;
-    font-size:2px;
-    
-  }
-  .card {
-    height: 295px;
-  }
-  .cardBox:last-child {
-    margin-bottom: 3%;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .cardBox {
-    margin-left: 6.8%;
-    margin-top: 3%;
-    width: 40%;
+    width: 30%;
     font-size:2px;
     
   }
@@ -243,26 +226,14 @@ body {
     margin-bottom: 3%;
   }
 }
-@media screen and (max-width: 768px) {
-  .cardBox {
-    margin-left: 6.8%;
-    margin-top: 3%;
-    width: 40%;
-    font-size:2px;
-    
-  }
-  .card {
-    height: 285px;
-  }
-  .cardBox:last-child {
-    margin-bottom: 3%;
-  }
-}
+
+
+
 @media screen and (max-width: 767px) {
   .cardBox {
     margin-left: 2.8%;
     margin-top: 3%;
-    width: 46%;
+    width: 40%;
     font-size:2px;
     
   }
