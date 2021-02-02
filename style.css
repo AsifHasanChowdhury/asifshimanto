@@ -212,11 +212,59 @@ body {
   }
 }
 
+@media screen and (min-width: 1025px) {
+  .cardBox {
+    margin-left: 6.8%;
+    margin-top: 3%;
+    width: 40%;
+    font-size:2px;
+    
+  }
+  .card {
+    height: 295px;
+  }
+  .cardBox:last-child {
+    margin-bottom: 3%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .cardBox {
+    margin-left: 6.8%;
+    margin-top: 3%;
+    width: 40%;
+    font-size:2px;
+    
+  }
+  .card {
+    height: 285px;
+  }
+  .cardBox:last-child {
+    margin-bottom: 3%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .cardBox {
+    margin-left: 6.8%;
+    margin-top: 3%;
+    width: 40%;
+    font-size:2px;
+    
+  }
+  .card {
+    height: 285px;
+  }
+  .cardBox:last-child {
+    margin-bottom: 3%;
+  }
+}
 @media screen and (max-width: 767px) {
   .cardBox {
     margin-left: 2.8%;
     margin-top: 3%;
     width: 46%;
+    font-size:2px;
+    
   }
   .card {
     height: 285px;
@@ -229,6 +277,7 @@ body {
 @media screen and (max-width: 480px) {
   .cardBox {
     width: 94.5%;
+    font-size: 2px;
   }
   .card {
     height: 260px;
