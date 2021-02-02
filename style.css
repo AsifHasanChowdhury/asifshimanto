@@ -247,8 +247,8 @@ body {
 
 @media screen and (max-width: 530px) {
   .cardBox {
-    margin-left: 55px;
-    width: 64.5%;
+    margin-left: 32px;
+    width: 74.5%;
     font-size: 2px;
   }
   .card {
